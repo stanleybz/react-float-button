@@ -7,7 +7,7 @@ react-float-button is a stuff make your button float.
 
 # How to use
 ```
-npm i react-float-button
+npm i react-float-button --save
 ```
 ```
 import FloatGroup from 'react-float-button';
