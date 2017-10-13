@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/react-float-button.png)](https://npmjs.org/package/react-float-button)
+
 # react-float-button
 
 react-float-button is a stuff make your button float.
