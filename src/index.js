@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 // Index component
-class FloatAnimate extends Component {
+class FloatButton extends Component {
   constructor() {
     super();
     this.state = {
@@ -18,15 +18,18 @@ class FloatAnimate extends Component {
   }
 
   render() {
+    const divStyle = Object.assign({}, this.props.style, {position: 'relative'});
     return (
-      <div style={this.props.style}>
-        {this.props.children.map((item, i) => {
+      <div style={divStyle}>
+        {
+          Object.prototype.toString.call(this.props.children) === '[object Array]' &&
+          this.props.children.map((item, i) => {
           if (i === 0) {
             return (
               <div
                 tabIndex={0}
                 role="button"
-                style={{ zIndex: 2 }}
+                style={{ zIndex: 2, position: 'relative' }}
                 onClick={this.showUpdate}
               >
                 {item}
@@ -68,16 +71,16 @@ class FloatAnimate extends Component {
   }
 }
 
-FloatAnimate.propTypes = {
+FloatButton.propTypes = {
   margin: PropTypes.number,
-  children: PropTypes.array, // eslint-disable-line
+  children: PropTypes.array.isRequired, // eslint-disable-line
   style: PropTypes.obj,
 };
 
-FloatAnimate.defaultProps = {
+FloatButton.defaultProps = {
   margin: 50,
   children: [],
   style: {},
 };
 
-export default FloatAnimate;
+export default FloatButton;
