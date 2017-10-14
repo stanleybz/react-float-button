@@ -1,6 +1,6 @@
 {
   "name": "react-float-button",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Floating button component for react",
   "main": "build/index.js",
   "peerDependencies": {
@@ -19,6 +19,15 @@
   "author": {
     "name": "Stanley Cheung",
     "email": "hi@stanley.bz"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanleybz/react-float-button/issues"
+  },
+  "homepage": "https://github.com/stanleybz/react-float-button",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanleybz/react-float-button"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

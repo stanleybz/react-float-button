@@ -518,13 +518,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // Index component
-var FloatAnimate = function (_Component) {
-  _inherits(FloatAnimate, _Component);
+var FloatButton = function (_Component) {
+  _inherits(FloatButton, _Component);
 
-  function FloatAnimate() {
-    _classCallCheck(this, FloatAnimate);
+  function FloatButton() {
+    _classCallCheck(this, FloatButton);
 
-    var _this = _possibleConstructorReturn(this, (FloatAnimate.__proto__ || Object.getPrototypeOf(FloatAnimate)).call(this));
+    var _this = _possibleConstructorReturn(this, (FloatButton.__proto__ || Object.getPrototypeOf(FloatButton)).call(this));
 
     _this.state = {
       show: false
@@ -533,7 +533,7 @@ var FloatAnimate = function (_Component) {
     return _this;
   }
 
-  _createClass(FloatAnimate, [{
+  _createClass(FloatButton, [{
     key: 'showUpdate',
     value: function showUpdate() {
       this.setState({
@@ -545,17 +545,18 @@ var FloatAnimate = function (_Component) {
     value: function render() {
       var _this2 = this;
 
+      var divStyle = Object.assign({}, this.props.style, { position: 'relative' });
       return _react2.default.createElement(
         'div',
-        { style: this.props.style },
-        this.props.children.map(function (item, i) {
+        { style: divStyle },
+        Object.prototype.toString.call(this.props.children) === '[object Array]' && this.props.children.map(function (item, i) {
           if (i === 0) {
             return _react2.default.createElement(
               'div',
               {
                 tabIndex: 0,
                 role: 'button',
-                style: { zIndex: 2 },
+                style: { zIndex: 2, position: 'relative' },
                 onClick: _this2.showUpdate
               },
               item
@@ -595,22 +596,22 @@ var FloatAnimate = function (_Component) {
     }
   }]);
 
-  return FloatAnimate;
+  return FloatButton;
 }(_react.Component);
 
-FloatAnimate.propTypes = {
+FloatButton.propTypes = {
   margin: _propTypes2.default.number,
-  children: _propTypes2.default.array, // eslint-disable-line
+  children: _propTypes2.default.array.isRequired, // eslint-disable-line
   style: _propTypes2.default.obj
 };
 
-FloatAnimate.defaultProps = {
+FloatButton.defaultProps = {
   margin: 50,
   children: [],
   style: {}
 };
 
-exports.default = FloatAnimate;
+exports.default = FloatButton;
 
 /***/ }),
 /* 8 */
