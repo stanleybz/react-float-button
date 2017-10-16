@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 // Index component
 class FloatButton extends Component {
@@ -71,11 +71,11 @@ class FloatButton extends Component {
   }
 }
 
-FloatButton.propTypes = {
-  margin: PropTypes.number,
-  children: PropTypes.array.isRequired, // eslint-disable-line
-  style: PropTypes.obj,
-};
+// FloatButton.propTypes = {
+//   margin: PropTypes.number,
+//   children: PropTypes.array.isRequired, // eslint-disable-line
+//   style: PropTypes.obj,
+// };
 
 FloatButton.defaultProps = {
   margin: 50,
