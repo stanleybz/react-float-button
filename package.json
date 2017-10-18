@@ -20,7 +20,7 @@
     "name": "Stanley Cheung",
     "email": "hi@stanley.bz"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stanleybz/react-float-button/issues"
   },
