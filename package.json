@@ -1,6 +1,6 @@
 {
   "name": "react-float-button",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Floating button component for react",
   "main": "build/index.js",
   "peerDependencies": {
