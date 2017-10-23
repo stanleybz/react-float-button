@@ -64,138 +64,14 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = require("react");
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* eslint-disable */
-
-
-// import PropTypes from 'prop-types';
-
-// Index component
-var FloatButton = function (_Component) {
-  _inherits(FloatButton, _Component);
-
-  function FloatButton() {
-    _classCallCheck(this, FloatButton);
-
-    var _this = _possibleConstructorReturn(this, (FloatButton.__proto__ || Object.getPrototypeOf(FloatButton)).call(this));
-
-    _this.state = {
-      show: false
-    };
-    _this.showUpdate = _this.showUpdate.bind(_this);
-    return _this;
-  }
-
-  _createClass(FloatButton, [{
-    key: 'showUpdate',
-    value: function showUpdate() {
-      this.setState({
-        show: !this.state.show
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var divStyle = Object.assign({}, this.props.style, { position: 'relative' });
-      return _react2.default.createElement(
-        'div',
-        { style: divStyle },
-        Object.prototype.toString.call(this.props.children) === '[object Array]' && this.props.children.map(function (item, i) {
-          if (i === 0) {
-            return _react2.default.createElement(
-              'div',
-              {
-                tabIndex: 0,
-                role: 'button',
-                style: { zIndex: 2, position: 'relative' },
-                onClick: _this2.showUpdate
-              },
-              item
-            );
-          }
-
-          return _react2.default.createElement(
-            'div',
-            {
-              tabIndex: -1,
-              role: 'button',
-              style: {
-                zIndex: 1,
-                position: 'absolute',
-                bottom: _this2.state.show ? _this2.props.margin * i : 0,
-                opacity: _this2.state.show ? 1 : 0,
-                visibility: _this2.state.show ? 'visible' : 'hidden',
-
-                MsTransition: 'all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-                WebkitTransition: 'all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-                transition: 'all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-
-                MsTransitionDelay: i * 0.03 + 's',
-                WebkitTransitionDelay: i * 0.03 + 's',
-                transitionDelay: i * 0.03 + 's',
-
-                MsTransform: 'scale(' + (_this2.state.show ? 1 : 0) + ', ' + (_this2.state.show ? 1 : 0) + ')',
-                WebkitTransform: 'scale(' + (_this2.state.show ? 1 : 0) + ', ' + (_this2.state.show ? 1 : 0) + ')',
-                transform: 'scale(' + (_this2.state.show ? 1 : 0) + ', ' + (_this2.state.show ? 1 : 0) + ')'
-              },
-              onClick: _this2.showUpdate
-            },
-            item
-          );
-        })
-      );
-    }
-  }]);
-
-  return FloatButton;
-}(_react.Component);
-
-// FloatButton.propTypes = {
-//   margin: PropTypes.number,
-//   children: PropTypes.array.isRequired, // eslint-disable-line
-//   style: PropTypes.obj,
-// };
-
-FloatButton.defaultProps = {
-  margin: 50,
-  children: [],
-  style: {}
-};
-
-exports.default = FloatButton;
+throw new Error("Module build failed: ReferenceError: [BABEL] /Users/stanley/Documents/open-source/react-float-button/src/index.js: Unknown option: /Users/stanley/Documents/open-source/react-float-button/node_modules/react/react.js.Children. Check out http://babeljs.io/docs/usage/options/ for more information about options.\n\nA common cause of this error is the presence of a configuration options object without the corresponding preset name. Example:\n\nInvalid:\n  `{ presets: [{option: value}] }`\nValid:\n  `{ presets: [['presetName', {option: value}]] }`\n\nFor more detailed information on preset configuration, please see http://babeljs.io/docs/plugins/#pluginpresets-options. (While processing preset: \"/Users/stanley/Documents/open-source/react-float-button/node_modules/react/react.js\")\n    at Logger.error (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/logger.js:41:11)\n    at OptionManager.mergeOptions (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:226:20)\n    at /Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:265:14\n    at /Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:323:22\n    at Array.map (native)\n    at OptionManager.resolvePresets (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:275:20)\n    at OptionManager.mergePresets (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:264:10)\n    at OptionManager.mergeOptions (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:249:14)\n    at OptionManager.init (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/options/option-manager.js:368:12)\n    at File.initOptions (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/index.js:212:65)\n    at new File (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/file/index.js:135:24)\n    at Pipeline.transform (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-core/lib/transformation/pipeline.js:46:16)\n    at transpile (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-loader/lib/index.js:50:20)\n    at Object.module.exports (/Users/stanley/Documents/open-source/react-float-button/node_modules/babel-loader/lib/index.js:175:20)");
 
 /***/ })
 /******/ ]);

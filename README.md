@@ -24,4 +24,4 @@ import FloatGroup from 'react-float-button';
 | ------ | ------ | ------ | ------ |
 | margin | number | 50 | The margin between each children |
 | style | object | {} | Simple style |
-
+| delay | number | 0.03 | Transition delay of each child |

@@ -53,9 +53,9 @@ class FloatButton extends Component {
                   WebkitTransition: 'all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
                   transition: 'all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
 
-                  MsTransitionDelay: `${i * 0.03}s`,
-                  WebkitTransitionDelay: `${i * 0.03}s`,
-                  transitionDelay: `${i * 0.03}s`,
+                  MsTransitionDelay: `${i * this.props.delay}s`,
+                  WebkitTransitionDelay: `${i * this.props.delay}s`,
+                  transitionDelay: `${i * this.props.delay}s`,
 
                   MsTransform: `scale(${this.state.show ? 1 : 0}, ${this.state.show ? 1 : 0})`,
                   WebkitTransform: `scale(${this.state.show ? 1 : 0}, ${this.state.show ? 1 : 0})`,
@@ -82,6 +82,7 @@ FloatButton.defaultProps = {
   margin: 50,
   children: [],
   style: {},
+  delay: 0.03,
 };
 
 export default FloatButton;
