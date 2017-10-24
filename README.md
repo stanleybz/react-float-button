@@ -14,7 +14,7 @@ npm i react-float-button --save
 ```
 import FloatGroup from 'react-float-button';
 
-<FloatGroup style={{ margin: '0 10px' }} margin={80}>
+<FloatGroup style={{ margin: '0 10px' }} margin={80} delay={0.02}>
     <Button>You can put any children under FloatGroup</Button>
     <Button>Hello, world!</Button>
 </FloatGroup>
