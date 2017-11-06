@@ -138,6 +138,7 @@ var FloatButton = function (_Component) {
             return _react2.default.createElement(
               'div',
               {
+                key: 'float-btn-' + i,
                 tabIndex: 0,
                 role: 'button',
                 style: { zIndex: 2, position: 'relative' },

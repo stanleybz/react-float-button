@@ -28,6 +28,7 @@ class FloatButton extends Component {
             if (i === 0) {
               return (
                 <div
+                  key={`float-btn-${i}`}
                   tabIndex={0}
                   role="button"
                   style={{ zIndex: 2, position: 'relative' }}
